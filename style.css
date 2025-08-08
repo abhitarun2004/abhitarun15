@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 70px;
+  background-color: #0535f4; /* Light orange starting background */
+  transition: background 1.5s ease;
+}
+body {
+  transition: background 1.5s ease;
+}
+
+
+
+
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 4px solid #ffb400;
+  box-shadow: 0 4px 20px rgba(255, 193, 7, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin-bottom: 20px;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 193, 7, 0.6);
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #ffb400;
+}
+
+@media (max-width: 575px) {
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+}
+/* Replace white/light sections with light orange */
+.bg-light {
+  background-color: #fff3e0 !important; /* Light orange */
+}
+
+/* Optional: Slightly darker section titles for contrast */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #ff9800; /* Rich orange */
+}
